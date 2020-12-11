@@ -8,7 +8,7 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-
+import classNames from "classnames";
 import useStyles from "./styles";
 
 const NewsCard = ({
@@ -39,7 +39,10 @@ const NewsCard = ({
   return (
     <Card
       ref={elRefs[i]}
-      className={activeArticle === i ? classes.activeCard : classes.card}
+      className={classNames(
+        classes.card,
+        activeArticle === i ? classes.activeCard : null
+      )}
     >
       <CardActionArea href={url} target="_blank">
         <CardMedia
@@ -61,8 +64,8 @@ const NewsCard = ({
         <Typography
           className={classes.title}
           gutterBottom
-          variant="h5"
-          component="h2"
+          variant="h6"
+          component="h5"
         >
           {title}
         </Typography>
