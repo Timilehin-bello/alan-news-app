@@ -45,7 +45,7 @@ function App() {
     <div className="App">
       <div className={classes.logoContainer}>
         <img
-          src="https://alan.app/voice/images/previews/preview.jpg"
+          src="https://46ba123xc93a357lc11tqhds-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/alan-300x200.jpg"
           className={classes.alanLogo}
           alt="logo"
         />
